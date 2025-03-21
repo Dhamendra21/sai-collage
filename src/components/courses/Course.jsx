@@ -73,7 +73,7 @@ const Course = () => {
   };
 
   return (
-    <div className="w-full px-20 max-sm:px-2 my-20 relative overflow-x-hidden">
+    <div className="w-full px-20 max-sm:px-2 sm:my-20 max-sm:mb-0 relative overflow-x-hidden">
       <motion.h1
       initial={{x:"-100%",opacity:0, }}
       animate="animate"
