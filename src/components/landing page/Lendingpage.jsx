@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import Navbar from "../navbar/Navbar";
 
 function LendingPage() {
   // Define reusable animation variants for similar animations
@@ -16,6 +17,8 @@ function LendingPage() {
   return (
     <div   data-scroll-container
     className="w-full h-[110vh] relative">
+      <Navbar/>
+      
       <img
         className="w-full absolute h-full object-cover object-left blur-[3px]"
         src="./collage pics/gate.jpg"
@@ -23,7 +26,6 @@ function LendingPage() {
         data-scroll 
           data-scroll-speed='-1'
       />
-
       <div className="w-full px-3 sm:px-20 top-[20%] text-white absolute ">
         {/* Animated heading with textVariants */}
         <motion.h2

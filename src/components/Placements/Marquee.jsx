@@ -22,10 +22,10 @@ function Marquee() {
       const currentState = window.scrollY;
       if (currentState > lastsScrollDir) {
         setsScrolldir("up");
-        console.log("sidha scroll kiya");
+        // console.log("sidha scroll kiya");
       } else if (currentState < lastsScrollDir) {
         setsScrolldir("down");
-        console.log("ulta scroll kiya ");
+        // console.log("ulta scroll kiya ");
       }
       setLastScrollDir(currentState);
     };
@@ -34,7 +34,7 @@ function Marquee() {
   }, [lastsScrollDir]);
 
   return (
-    <div className="w-full py-20 overflow-x-hidden relative">
+    <div className="w-full py-10 overflow-x-hidden relative">
       <div className="left z-50 absolute top-[15%] w-[15rem] h-[10rem] max-sm:w-[5rem] bg-gradient-to-r from-[#f9f9f9] via-[#f7f7f7b3] to-[#ececec27] "  ></div>
       <div className="left z-50 absolute top-[15%] right-0 w-[15rem] max-sm:w-[5rem] h-[10rem] bg-gradient-to-r from-[#f9f9f900] via-[#f7f7f7d1] to-[#ffffff] "  ></div>
       <motion.div

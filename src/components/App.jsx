@@ -8,7 +8,7 @@ import LocomotiveScroll from 'locomotive-scroll'
 function App() {
   let loco = new LocomotiveScroll()
   return (
-    <div className='w-full font-["helvetica"]'>
+    <div className='w-full font-["helvetica"] relative overflow-x-hidden'>
         <Lendingpage/>
         <Placements/>
         <Course/>

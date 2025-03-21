@@ -1,18 +1,37 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import { motion } from "framer-motion";
 
 const Course = () => {
   const imageRef = useRef([]);
   const coursesRef = useRef([]); // Store DOM nodes for each course row
-  const LinkRef = useRef([]);    // Store links for each "Know more"
+  const LinkRef = useRef([]); // Store links for each "Know more"
   const [hoverDiv, setHoverDiv] = useState(false);
 
   const courses = [
-    { name: "BCA", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6EBEgWfpH2IXAJUZ1wNZVUP_YdTgqagepA&s" },
-    { name: "B-COM", image: "https://5.imimg.com/data5/SELLER/Default/2024/3/401518941/GH/AH/HK/7402335/bachelor-of-commerce-500x500.jpg" },
-    { name: "BBA", image: "https://www.includehelp.com/dictionary/Images/bba.jpg" },
-    { name: "B.LIB", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjIiJI1Wy3Tz8j8HOmSGlaC3pZUOrBySxDxI7UQTpzd_QsizbaG3qrHsXGZoncg_LTUQM&usqp=CAU" },
-    { name: "MSC CS", image: "https://www.kaashiv.com/img/course/hyw0xlf0.png" },
+    {
+      name: "BCA",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6EBEgWfpH2IXAJUZ1wNZVUP_YdTgqagepA&s",
+    },
+    {
+      name: "B-COM",
+      image:
+        "https://5.imimg.com/data5/SELLER/Default/2024/3/401518941/GH/AH/HK/7402335/bachelor-of-commerce-500x500.jpg",
+    },
+    {
+      name: "BBA",
+      image: "https://www.includehelp.com/dictionary/Images/bba.jpg",
+    },
+    {
+      name: "B.LIB",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjIiJI1Wy3Tz8j8HOmSGlaC3pZUOrBySxDxI7UQTpzd_QsizbaG3qrHsXGZoncg_LTUQM&usqp=CAU",
+    },
+    {
+      name: "MSC CS",
+      image: "https://www.kaashiv.com/img/course/hyw0xlf0.png",
+    },
   ];
 
   const hoverImage = (i, e) => {
@@ -50,11 +69,19 @@ const Course = () => {
         duration: 0.3,
       });
     });
+    
   };
 
   return (
     <div className="w-full px-20 max-sm:px-2 my-20 relative overflow-x-hidden">
-      <h1 className="text-6xl font-bold tracking-tight sticky top-0 z-50">COURSES</h1>
+      <motion.h1
+      initial={{x:"-100%",opacity:0, }}
+      animate="animate"
+      transition={{ duration: 0.7, ease:"easeIn" }}
+      whileInView={{x: 0,opacity:1 }}
+      className="text-6xl font-bold tracking-tight sticky top-0 z-50">
+        COURSES
+      </motion.h1>
 
       <div className="my-20">
         {courses.map((c, i) => (
@@ -74,7 +101,11 @@ const Course = () => {
               alt="Hovered Course"
             />
             {hoverDiv ? (
-              <a ref={(el) => (LinkRef.current[i] = el)} href="#" className="opacity">
+              <a
+                ref={(el) => (LinkRef.current[i] = el)}
+                href="#"
+                className="opacity"
+              >
                 Know more
               </a>
             ) : (
