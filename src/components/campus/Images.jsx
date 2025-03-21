@@ -2,17 +2,17 @@ import { image } from "framer-motion/client";
 
 const Images = () => {
     const images = [
-     {heading:"campus",  image:"/public/collage pics/campus.jpg"},
-      {heading:"Green Campus", image:"/public/collage pics/green2.jpg",},
-     { heading:"Corridor", image:"/public/collage pics/coridoor.jpg",},
-      {heading:"library", image:"/public/collage pics/library.jpg",},
-     { heading:"Entry Gate", image: "/public/collage pics/gate.jpg",},
-      { heading:"Modern classrooms", image:"/public/collage pics/classroom.jpg",},
-      { heading:"Computer Labs", image:"/public/collage pics/computer.jpg",},
-      {heading:"Botany Lab", image:"/public/collage pics/botny.jpg",},
-      {heading:"Zoology Lab", image:"/public/collage pics/zoology.jpg",},
-      {heading:"Chemistry Lab", image:"/public/collage pics/chemestry.jpg"},
-      {heading:"CS Department", image:"/public/collage pics/csDepart.jpg", }
+     {heading:"campus",  image:"/collage pics/campus.jpg"},
+      {heading:"Green Campus", image:"/collage pics/green2.jpg",},
+     { heading:"Corridor", image:"/collage pics/coridoor.jpg",},
+      {heading:"library", image:"/collage pics/library.jpg",},
+     { heading:"Entry Gate", image: "/collage pics/gate.jpg",},
+      { heading:"Modern classrooms", image:"/collage pics/classroom.jpg",},
+      { heading:"Computer Labs", image:"/collage pics/computer.jpg",},
+      {heading:"Botany Lab", image:"/collage pics/botny.jpg",},
+      {heading:"Zoology Lab", image:"/collage pics/zoology.jpg",},
+      {heading:"Chemistry Lab", image:"/collage pics/chemestry.jpg"},
+      {heading:"CS Department", image:"/collage pics/csDepart.jpg", }
       
     ];
   

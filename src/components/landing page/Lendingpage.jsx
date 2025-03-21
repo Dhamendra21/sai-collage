@@ -18,7 +18,7 @@ function LendingPage() {
     className="w-full h-[110vh] relative">
       <img
         className="w-full absolute h-full object-cover object-left blur-[3px]"
-        src="./public/collage pics/gate.jpg"
+        src="./collage pics/gate.jpg"
         alt=""
         data-scroll 
           data-scroll-speed='-1'
