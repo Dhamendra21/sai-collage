@@ -34,10 +34,12 @@ function Marquee() {
   }, [lastsScrollDir]);
 
   return (
-    <div className="w-full py-10 overflow-x-hidden relative">
+    <div data-scroll 
+    data-scroll-speed='0.1' className="w-full py-10 overflow-x-hidden relative">
       <div className="left z-50 absolute top-[7rem] w-[15rem] h-[10rem] max-sm:w-[5rem] bg-gradient-to-r from-[#f9f9f9] via-[#f7f7f7b3] to-[#ececec27] "  ></div>
       <div className="left z-50 absolute top-[7rem] right-0 w-[15rem] max-sm:w-[5rem] h-[10rem] bg-gradient-to-r from-[#f9f9f900] via-[#f7f7f7d1] to-[#ffffff] "  ></div>
       <motion.div
+      
         animate={{ x: scrollDir === "up" ? ["0%", "-100%"] : ["-100%", "0%"] }}
         transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
         className="flex flex-nowrap gap-20 mt-10 translate-x-0 py-20 relative "

@@ -11,6 +11,8 @@ function Campus() {
         <Images/>
         <button className='px-10 py-3 bg-zinc-900 text-lg text-white rounded-md'>View More </button>
         </div>
+
+        <h1 className='sm:px-20 my-20 f text-9xl max-sm:text-6xl px-2 sm:w-2/3'>Be connected with us</h1>
     </section>
   )
 }

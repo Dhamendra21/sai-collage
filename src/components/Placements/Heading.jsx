@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 const Heading = () => {
   return (
-    <div className="w-full  overflow-x-hidden flex items-center sm:px-20 py-20">
-    <motion.h1 className="text-[6.5rem] max-sm:text-[3.8rem] font-['inter'] font-semibold  leading-none mt-20 uppercase">
+    <div  className="w-full   overflow-x-hidden flex items-center sm:px-20 py-20">
+    <motion.h1  className="text-[6.5rem] max-sm:text-[3.8rem] font-['inter'] font-semibold  leading-none mt-20 uppercase">
   {["Launching ", "Careers, " , "Building, ", "Futures!"].map((p, i) => {
     return (
       <motion.span

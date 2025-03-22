@@ -54,7 +54,7 @@ function Navbar() {
         {/* Menu with independent scroll */}
         <div
           ref={menuRef}
-          className="w-[50vw] max-sm:w-[100vw] h-screen px-10 bg-[#cbcacac4] absolute top-0 z-[99999] right-0 transform translate-x-full overflow-y-auto"
+          className="w-[50vw] max-sm:w-[100vw] h-screen px-10 bg-[#d8d8d8c9] backdrop-blur-sm absolute top-0 z-[99999] right-0 transform translate-x-full overflow-y-auto"
         >
           <div className="w-10">
             <svg

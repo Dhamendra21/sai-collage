@@ -4,6 +4,7 @@ import Placements from './Placements/Placements'
 import Course from './courses/Course'
 import Campus from './campus/Campus'
 import LocomotiveScroll from 'locomotive-scroll'
+import Footer from './others/Footer'
 
 function App() {
   let loco = new LocomotiveScroll()
@@ -13,6 +14,7 @@ function App() {
         <Placements/>
         <Course/>
         <Campus/>
+        <Footer/>
     </div>
   )
 }

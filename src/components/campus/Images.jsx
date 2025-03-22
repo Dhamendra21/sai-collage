@@ -17,7 +17,7 @@ const Images = () => {
     ];
   
     return (
-      <div className="columns-3 max-sm:columns-2 gap-4 mt-6 max-sm:p-0 p-5 md:columns-4">
+      <div  className="columns-3 max-sm:columns-2 gap-4 mt-6 max-sm:p-0 p-5 md:columns-4">
         {images.map((items, i) => (
           <div key={i} className="break-inside-avoid mb-4">
             <img src={items.image} alt="Masonry Image" className="w-full hover:scale-105 cursor-pointer transition-[1s] rounded-lg" />
