@@ -39,7 +39,7 @@ const entranceBasedPG = courseData.PG.filter(program => program.entrance_exam);
         <div className="max-w-7xl mx-auto">
 
           {/* Header */}
-          <div className="text-center mb-12">
+          <div className="text-center mt-10 mb-12">
             <h1 className="text-4xl font-bold text-gray-900">University Programs</h1>
             <p className="mt-3 text-xl text-gray-600">
               Explore our comprehensive course offerings
