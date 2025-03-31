@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 const Course = () => {
   const imageRef = useRef([]);
@@ -85,7 +87,7 @@ const Course = () => {
 
       <div className="my-20">
         {courses.map((c, i) => (
-          <div
+          <Link to={'/courses'}
             key={i}
             onMouseEnter={() => setHoverDiv(true)}
             onMouseLeave={() => setHoverDiv(false)}
@@ -111,12 +113,12 @@ const Course = () => {
             ) : (
               ""
             )}
-          </div>
+          </Link>
         ))}
 
-        <button className="mt-10 bg-zinc-800 text-white text-xl px-8 py-5 rounded-full hover:scale-105">
+        <Link to={'/courses'} className="mt-10 inline-block bg-zinc-800 text-white text-xl px-8 py-5 rounded-full hover:scale-105">
           Fees structure
-        </button>
+        </Link>
       </div>
     </div>
   );

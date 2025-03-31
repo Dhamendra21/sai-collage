@@ -6,19 +6,19 @@ import Campus from './campus/Campus'
 import LocomotiveScroll from 'locomotive-scroll'
 import Footer from './others/Footer'
 import CoursesPage from './Cources'
-import { Route, Routes } from 'react-router-dom'
-import Home from './Home'
 
-function App() {
-  let loco = new LocomotiveScroll()
+const Home = () => {
   return (
-    <div className='w-full overflow-x-hidden'>
-      <Routes>
-     <Route path='/' element={<Home/>} />
-     <Route path='/courses' element={<CoursesPage/>} />
-      
-    </Routes>
-    </div>
+    <div className='w-full font-["helvetica"] relative overflow-x-hidden'>
+    <Lendingpage/>
+    <Placements/>
+    <Course/>
+    <Campus/>
+    <Footer/>
+
+    
+</div>
   )
 }
-export default App
+
+export default Home
