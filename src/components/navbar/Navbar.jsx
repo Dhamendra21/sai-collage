@@ -43,7 +43,7 @@ function Navbar() {
     <div className="z-[9999]  flex justify-between items-center px-10 max-sm:px-3 absolute w-full top-0">
       <Link to={'/'} className="logo py-2 flex gap-5 items-center">
         <img className="w-[5rem] max-sm:w-[3rem]" src="./logo.png" alt="Logo" />
-        <h3 className='uppercase text-3xl max-sm:text-xl font-["gilroy"]'>sai collage</h3>
+        <h3 className='uppercase text-3xl max-sm:text-xl font-["gilroy"]'>sai college</h3>
       </Link >
       
       <div className="z-[99] top-0">
