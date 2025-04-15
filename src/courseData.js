@@ -96,23 +96,7 @@ const courseData = {
         "batch_size": 40,
         "last_updated": "2025-06-01"
       },
-      {
-        "name": "MCA",
-        "full_name": "Master of Computer Applications",
-        "duration": "2 years",
-        "type": "Postgraduate",
-        "semesters": 4,
-        "credits": 95,
-        "credit_system": "Semester",
-        "grading_system": "Percentage",
-        "eligibility": "Graduation with Math (50%)",
-        "entrance_exam": true,
-        "core_subjects": ["Cloud Computing", "Big Data"],
-        "career_opportunities": ["Cloud Architect", "Full Stack Developer"],
-        "avg_salary": "6.5 LPA",
-        "batch_size": 60,
-        "last_updated": "2025-06-01"
-      }
+      
     ],
     "Diploma": [
       {
@@ -132,21 +116,7 @@ const courseData = {
         "batch_size": 100,
         "last_updated": "2025-06-01"
       },
-      {
-        "name": "DCA",
-        "full_name": "Diploma in Computer Applications",
-        "duration": "6 months",
-        "type": "Diploma",
-        "semesters": 1,
-        "credits": 25,
-        "grading_system": "Pass/Fail",
-        "eligibility": "10+2",
-        "core_subjects": ["Computer Basics", "Internet"],
-        "career_opportunities": ["Computer Operator"],
-        "avg_salary": "2.0 LPA",
-        "batch_size": 120,
-        "last_updated": "2025-06-01"
-      }
+      
     ]
   }
   
